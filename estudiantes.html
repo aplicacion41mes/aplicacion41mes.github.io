@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD ESTUDIANTES</title>
+  <link rel="stylesheet" href="/css/estudiantes.css">
+  <!-- Carga el núcleo de Firebase JS SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <!-- Agrega el manejo de autenticación. -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <!--Agrega el manejo de bases de datos.-->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <!-- Configura la app usando la información del sitio de Firebase.-->
+  <script src="/js/init.js">
+  </script>
+  <script type="module" src="cmp/mi-nav.js">
+  </script>
+  <script type="module" src="cmp/mi-footer.js">
+  </script>
+  <script type="module" src="cmp/mi-progreso.js">
+  </script>
+</head>
+
+<body>
+
+  <div class="div-titulo">
+    <h1>ESTUDIANTES</h1>
+  </div>
+
+  <div class="contenedor">
+    <div class="div-formulario">
+      <h2>Formulario</h2>
+
+      <form action="#" id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre del estudiante.... ">
+        <input type="text" id="grado" placeholder="Grado.... ">
+        <input type="text" id="grupo" placeholder="Grupo.... ">
+        <input type="text" id="turno" placeholder="Turno.... ">
+        <a>fecha de nacimineto</a>
+        <input type="date" id="fecha" placeholder="fecha de nacimiento.... ">
+        <button type="submit" id="btnAgregar">Agregar</button>
+      </form>
+    </div>
+    <div class="div-listado">
+      <h2>Listado de Estudiantes</h2>
+      <div class="div-estudiantes">
+
+      </div>
+
+    </div>
+  </div>
+  <script src="/js/estudiantes.js"></script>
+  <footer class="footer">
+    <table>
+      <tr>
+        <th>
+          © Copyright 2023,<br> Espinosa Serrano Marco Atonio. <br> ® Derechos Reservados.
+        </th>
+      </tr>
+    </table>
+  </footer>
